@@ -49,6 +49,7 @@ html {
     font-size: 18px;
     font-family: 'Kaisei Opti', serif;
     margin: 0 auto;
+    background-color: #f4eee1;
 }
 
 .nav-logo div {
@@ -57,11 +58,15 @@ html {
     padding: 1rem;
 }
 
-header {
+nav {
     display: flex;
     justify-content: space-between;
     padding: 2rem 10rem;
     border-bottom: .5px rgba(26, 26, 26, 0.45) solid;
+}
+
+header {
+    height: 100vh;
 }
 
 .nav-links {
@@ -91,6 +96,7 @@ main {
 }
 
 .title {
+    border-top: 2px solid black;
     font-family: 'Kaisei Opti', serif;
     font-size: 5rem;
 }
@@ -98,9 +104,15 @@ main {
 .flex-row {
     display: flex;
     flex-direction: row;
+    margin-bottom: 20rem;
 }
 
 .flex-item{
     flex: 1;
-    
+}
+
+.project-image {
+    border-radius: 2%;
+    max-width: 100%;
+    height: auto;
 }
