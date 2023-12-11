@@ -1,0 +1,106 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+html {
+    font-size: 18px;
+    font-family: 'Kaisei Opti', serif;
+    margin: 0 auto;
+}
+
+.nav-logo div {
+    font-size: 3rem;
+    border: 1px black solid;
+    padding: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10rem;
+    border-bottom: .5px rgba(26, 26, 26, 0.45) solid;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-links ul {
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav-links li {
+    padding: 0 1rem;
+    font-size: 2rem;
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin:0 auto;
+    gap: 2rem;
+}
+
+.title {
+    font-family: 'Kaisei Opti', serif;
+    font-size: 5rem;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-item{
+    flex: 1;
+    
+}
