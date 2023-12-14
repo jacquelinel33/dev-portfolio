@@ -37,6 +37,7 @@
   */
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+    font-weight: lighter;
   }
   /*
     8. Create a root stacking context
@@ -46,14 +47,15 @@
   }
 
 html {
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Kaisei Opti', serif;
     margin: 0 auto;
-    background-color: #f4eee1;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);  
 }
 
 .nav-logo div {
-    font-size: 3rem;
+    /* font-size: 1.5rem; */
     border: 1px black solid;
     padding: 1rem;
 }
@@ -61,7 +63,7 @@ html {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 10rem;
+    padding: 1rem 10rem;
     border-bottom: .5px rgba(26, 26, 26, 0.45) solid;
 }
 
@@ -83,7 +85,7 @@ header {
 
 .nav-links li {
     padding: 0 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 main {
@@ -93,6 +95,7 @@ main {
     max-width: 1440px;
     margin:0 auto;
     gap: 2rem;
+    padding: 0 10vh;
 }
 
 .title {
@@ -104,15 +107,55 @@ main {
 .flex-row {
     display: flex;
     flex-direction: row;
-    margin-bottom: 20rem;
+    margin-bottom: 5rem;
+    gap: 3.5rem;
+}
+
+.flex-row-reverse {
+    display: flex;
+    margin-bottom: 5rem;
+    gap: 3.5rem;
+    flex-direction: row-reverse;
 }
 
 .flex-item{
     flex: 1;
+    align-self: center;
 }
 
 .project-image {
     border-radius: 2%;
     max-width: 100%;
     height: auto;
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 4rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.stacks-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: .5rem;
+}
+
+.stacks-list li {
+    border: 1px solid black;
+    padding: .2rem .6rem;
+}
+
+.sub-title {
+    font-size: 2rem;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
