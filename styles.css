@@ -1,3 +1,8 @@
+:root {
+    --primary-font-fam: 'Kaisei Opti';
+    --secondary-font-fam: 'Open Sans';
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -52,10 +57,10 @@ a {
 
 html {
     font-size: 16px;
-    font-family: 'Kaisei Opti', serif;
+    font-family: var(--primary-font-fam), serif;
     margin: 0 auto;
     background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);  
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, #94bbe9 100%);  
 }
 
 .nav-logo div {
@@ -69,16 +74,19 @@ nav {
     padding: 1rem 10rem;
     height: 10vh;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
-.nav-links.scrolled {
-    background-color: rgba(255, 255, 255, 0.957);
+.nav-list {
+    padding: .5rem 3rem;
+}
+
+.nav-list.scrolled {
+    background-color: #e7e7e7e6;
     border-radius: 100px; /* New background color when scrolled */
-    
 }
 
 header {
@@ -99,11 +107,10 @@ header {
 
 .nav-links li {
     padding: 0 1rem;
-    font-size: 1.5rem;
 }
 
 main {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--secondary-font-fam), sans-serif;
     display: flex;
     flex-direction: column;
     max-width: 1440px;
@@ -118,7 +125,7 @@ main {
 
 .title {
     /* border-top: 2px solid black; */
-    font-family: 'Kaisei Opti', serif;
+    font-family: var(--primary-font-fam), serif;
     font-size: 5rem;
 }
 
@@ -151,7 +158,7 @@ main {
 .header-title {
     display: flex;
     justify-content: center;
-    font-size: 4rem;
+    font-size: 3rem;
     align-items: center;
     gap: 2rem;
     height: 90vh;
