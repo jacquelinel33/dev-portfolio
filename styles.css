@@ -87,6 +87,7 @@ nav {
 .nav-list.scrolled {
     background-color: #e7e7e7e6;
     border-radius: 100px; /* New background color when scrolled */
+    padding: 1rem 3rem;
 }
 
 header {
