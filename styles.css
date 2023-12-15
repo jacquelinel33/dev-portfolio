@@ -1,6 +1,12 @@
 :root {
-    --primary-font-fam: 'Kaisei Opti';
+    --primary-font-fam: 'Elsie';
     --secondary-font-fam: 'Open Sans';
+    --background-color: radial-gradient(circle, #c6ae98 50%, #f4eee1 100%);
+    --primary-font-clr: #000;
+}
+
+.secondary-font {
+    font-family: var(--secondary-font-fam);
 }
 
 /*
@@ -52,15 +58,26 @@
   }
 
 a {
-    text-decoration: none
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: black;
+}
+
+a:visited { 
+    text-decoration: none;
+    color: black;
 }
 
 html {
     font-size: 16px;
     font-family: var(--primary-font-fam), serif;
     margin: 0 auto;
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, #94bbe9 100%);  
+    background: var(--background-color);
+    color: var(--primary-font-clr)
 }
 
 .nav-logo div {
@@ -110,6 +127,10 @@ header {
     padding: 0 1rem;
 }
 
+.profile-pic {
+    border-radius: 300px;
+    max-width: 150px;
+}
 main {
     font-family: var(--secondary-font-fam), sans-serif;
     display: flex;
@@ -128,6 +149,7 @@ main {
     /* border-top: 2px solid black; */
     font-family: var(--primary-font-fam), serif;
     font-size: 5rem;
+    margin-top: 5rem;
 }
 
 .flex-row {
@@ -164,6 +186,7 @@ main {
     gap: 2rem;
     height: 90vh;
     padding: 0 10vh;
+    flex-direction: row-reverse;
 }
 
 .stacks-list {

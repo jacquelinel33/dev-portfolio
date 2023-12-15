@@ -3,157 +3,168 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Elsie&family=Kaisei+Opti&family=Lora&family=Open+Sans:wght@300&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Elsie&family=Kaisei+Opti&family=Lora&family=Open+Sans:wght@300&family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Js script -->
     <script src="/Users/jacquelinelee/Desktop/web-dev/portfolio/index.js"></script>
-  </head>
-  <body class="home">
-      <nav>
+</head>
+<body id="home">
+    <nav data-aos="fade-left">
         <div class="nav-links">
-          <ul class ="nav-list">
-            <li>
-                <a href="#home">Home</a>
-            </li>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-          </ul>
+            <ul class="nav-list">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-      </nav>
-      <div class="header-title">
-        <h2>
-          Hi, I'm Jacqueline, <br />
-          a Software Developer
+    </nav>
+    <div class="header-title">
+        <h2 data-aos="fade-down">
+            HI, I'M JACQUELINE! <br />
+            A SOFTWARE DEVELOPER.
         </h2>
-        <p>I am passionate about ....</p>
-      </div>
- 
+        <img data-aos="fade-right"
+        class="profile-pic"
+        src="/Users/jacquelinelee/Desktop/web-dev/portfolio/assets/profile.jpeg"
+        />
+        <!-- <p class="secondary-font">blurb here....</p> -->
+    </div>
+    
     <main>
-      <section class="about" id="about">
-        <h2 class="title">About</h2>
-        <div class="flex-row">
-          <div class="flex-item">Hi, I'm Jacqueline.</div>
-          <div class="flex-item">
-            test test test testtest testtest testtest testtest testtest testtest
-            testtest testtest testtest testtest testtest testtest testtest
-            testtest testtest testtest testtest testtest testtest test
-          </div>
-        </div>
-      </section>
-      <section class="portfolio" id="portfolio">
-        <h2 class="title">Portfolio</h2>
-        <div class="flex-row">
-          <div class="flex-item project-details">
-            <h3 class="sub-title">Interview Scheduler</h3>
-            <ul class="stacks-list">
-              <li>React</li>
-              <li>Node</li>
-              <li>Express</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>HTML</li>
-            </ul>
-            <p>
-              This is an interview scheduling tool where users can create, edit,
-              and delete interview appointments. Lorem ipsum dolor sit
-              amet,consectetur adipiscing elit. Aliquam a porttitor elit. In hac
-              habitasse platea dictumst. Quisque mollis auctor odio vel
-              sagittis. Ut scelerisque mi a tempor interdum. Pellentesque in
-              fermentum tortor.
-            </p>
-            <div>View Code</div>
-          </div>
-          <div class="flex-item">
-            <img class="project-image" src="assets/interview-scheduler.png" />
-          </div>
-        </div>
-        <div class="flex-row-reverse">
-          <div class="flex-item project-details">
-            <h3 class="sub-title">Interview Scheduler</h3>
-            <ul class="stacks-list">
-              <li>React</li>
-              <li>Node</li>
-              <li>Express</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>HTML</li>
-            </ul>
-            <p>
-              This is an interview scheduling tool where users can create, edit,
-              and delete interview appointments. Lorem ipsum dolor sit
-              amet,consectetur adipiscing elit. Aliquam a porttitor elit. In hac
-              habitasse platea dictumst. Quisque mollis auctor odio vel
-              sagittis. Ut scelerisque mi a tempor interdum. Pellentesque in
-              fermentum tortor.
-            </p>
-            <div>View Code</div>
-          </div>
-          <div class="flex-item">
-            <img class="project-image" src="assets/interview-scheduler.png" />
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item project-details">
-            <h3 class="sub-title">Interview Scheduler</h3>
-            <ul class="stacks-list">
-              <li>React</li>
-              <li>Node</li>
-              <li>Express</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>HTML</li>
-            </ul>
-            <p>
-              This is an interview scheduling tool where users can create, edit,
-              and delete interview appointments. Lorem ipsum dolor sit
-              amet,consectetur adipiscing elit. Aliquam a porttitor elit. In hac
-              habitasse platea dictumst. Quisque mollis auctor odio vel
-              sagittis. Ut scelerisque mi a tempor interdum. Pellentesque in
-              fermentum tortor.
-            </p>
-            <div>View Code</div>
-          </div>
-          <div class="flex-item">
-            <img class="project-image" src="assets/interview-scheduler.png" />
-          </div>
-        </div>
-        <div class="flex-row-reverse">
-          <div class="flex-item project-details">
-            <h3 class="sub-title">Interview Scheduler</h3>
-            <ul class="stacks-list">
-              <li>React</li>
-              <li>Node</li>
-              <li>Express</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>HTML</li>
-            </ul>
-            <p>
-              This is an interview scheduling tool where users can create, edit,
-              and delete interview appointments. Lorem ipsum dolor sit
-              amet,consectetur adipiscing elit. Aliquam a porttitor elit. In hac
-              habitasse platea dictumst. Quisque mollis auctor odio vel
-              sagittis. Ut scelerisque mi a tempor interdum. Pellentesque in
-              fermentum tortor.
-            </p>
-            <div>View Code</div>
-          </div>
-          <div class="flex-item">
-            <img class="project-image" src="assets/interview-scheduler.png" />
-          </div>
-        </div>
-      </section>
+        <section class="about" data-aos="fade-down" id="about">
+            <h2 class="title">About</h2>
+            <div class="flex-row">
+                <div class="flex-item" >Hi, I'm Jacqueline.</div>
+                <div class="flex-item" >
+                    test test test testtest testtest testtest testtest testtest testtest
+                    testtest testtest testtest testtest testtest testtest testtest
+                    testtest testtest testtest testtest testtest testtest test
+                </div>
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <h2 class="title" data-aos="fade-down" >Portfolio</h2>
+            <div class="flex-row">
+                <div class="flex-item project-details" data-aos="fade-right">
+                    <h3 class="sub-title">Interview Scheduler</h3>
+                    <ul class="stacks-list">
+                        <li>React</li>
+                        <li>Node</li>
+                        <li>Express</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                    </ul>
+                    <p>
+                        This is an interview scheduling tool where users can create, edit,
+                        and delete interview appointments. Lorem ipsum dolor sit
+                        amet,consectetur adipiscing elit. Aliquam a porttitor elit. In hac
+                        habitasse platea dictumst. Quisque mollis auctor odio vel
+                        sagittis. Ut scelerisque mi a tempor interdum. Pellentesque in
+                        fermentum tortor.
+                    </p>
+                    <div>View Code</div>
+                </div>
+                <div class="flex-item" data-aos="fade-left">
+                    <img class="project-image" src="assets/interview-scheduler.png" />
+                </div>
+            </div>
+            <div class="flex-row-reverse">
+                <div class="flex-item project-details" data-aos="fade-left" >
+                    <h3 class="sub-title">Interview Scheduler</h3>
+                    <ul class="stacks-list">
+                        <li>React</li>
+                        <li>Node</li>
+                        <li>Express</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                    </ul>
+                    <p>
+                        This is an interview scheduling tool where users can create, edit,
+                        and delete interview appointments. Lorem ipsum dolor sit
+                        amet,consectetur adipiscing elit. Aliquam a porttitor elit. In hac
+                        habitasse platea dictumst. Quisque mollis auctor odio vel
+                        sagittis. Ut scelerisque mi a tempor interdum. Pellentesque in
+                        fermentum tortor.
+                    </p>
+                    <div>View Code</div>
+                </div>
+                <div class="flex-item" data-aos="fade-right" >
+                    <img class="project-image" src="assets/interview-scheduler.png" />
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="flex-item project-details" data-aos="fade-right">
+                    <h3 class="sub-title">Interview Scheduler</h3>
+                    <ul class="stacks-list">
+                        <li>React</li>
+                        <li>Node</li>
+                        <li>Express</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                    </ul>
+                    <p>
+                        This is an interview scheduling tool where users can create, edit,
+                        and delete interview appointments. Lorem ipsum dolor sit
+                        amet,consectetur adipiscing elit. Aliquam a porttitor elit. In hac
+                        habitasse platea dictumst. Quisque mollis auctor odio vel
+                        sagittis. Ut scelerisque mi a tempor interdum. Pellentesque in
+                        fermentum tortor.
+                    </p>
+                    <div>View Code</div>
+                </div>
+                <div class="flex-item" data-aos="fade-left">
+                    <img class="project-image" src="assets/interview-scheduler.png" />
+                </div>
+            </div>
+            <div class="flex-row-reverse">
+                <div class="flex-item project-details" data-aos="fade-left" >
+                    <h3 class="sub-title">Interview Scheduler</h3>
+                    <ul class="stacks-list">
+                        <li>React</li>
+                        <li>Node</li>
+                        <li>Express</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                    </ul>
+                    <p>
+                        This is an interview scheduling tool where users can create, edit,
+                        and delete interview appointments. Lorem ipsum dolor sit
+                        amet,consectetur adipiscing elit. Aliquam a porttitor elit. In hac
+                        habitasse platea dictumst. Quisque mollis auctor odio vel
+                        sagittis. Ut scelerisque mi a tempor interdum. Pellentesque in
+                        fermentum tortor.
+                    </p>
+                    <div>View Code</div>
+                </div>
+                <div class="flex-item" data-aos="fade-right" >
+                    <img class="project-image" src="assets/interview-scheduler.png" />
+                </div>
+            </div>
+        </section>
     </main>
-  </body>
+</body>
 </html>
+
+<script> AOS.init({ duration: 2000, }); </script>
