@@ -1,7 +1,7 @@
 :root {
     --primary-font-fam: 'Elsie';
     --secondary-font-fam: 'Inter';
-    --background-color: radial-gradient(circle, #c6ae98 50%, #f4eee1 100%);
+    --background-color: #f4eee1;
     --primary-font-clr: #000;
 }
 
@@ -28,6 +28,7 @@
   */
   body {
     -webkit-font-smoothing: antialiased;
+    line-height: 1.2;
   }
   /*
     5. Improve media defaults
@@ -58,6 +59,7 @@
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 a:hover {
@@ -93,7 +95,7 @@ h3 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 4rem;
 }
 .nav-logo div {
     /* font-size: 1.5rem; */
@@ -110,6 +112,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 100;
+    color:black;
 }
 
 .nav-list {
@@ -157,10 +160,13 @@ main {
 }
 
 .title {
-    /* border-top: 2px solid black; */
     font-family: var(--primary-font-fam), serif;
-    font-size: 5rem;
-    margin-top: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.sub-title {
     text-transform: uppercase;
 }
 
@@ -168,14 +174,14 @@ main {
     display: flex;
     flex-direction: row;
     gap: 3.5rem; 
-    height: 90vh;
+    height: 60vh;
 }
 
 .flex-row-reverse {
     display: flex;
     gap: 3.5rem;
     flex-direction: row-reverse;
-    height: 90vh;
+    height: 60vh;
 }
 
 .flex-item{
@@ -194,7 +200,7 @@ main {
     font-size: 3rem;
     align-items: center;
     gap: 2rem;
-    height: 90vh;
+    height: 75vh;
     padding: 0 10vh;
     flex-direction: row-reverse;
 }
@@ -208,6 +214,7 @@ main {
     display: flex;
     padding: 0;
     gap: .5rem;
+    text-transform: uppercase;
 }
 
 .stacks-list li {
@@ -229,19 +236,14 @@ main {
     display: flex;
     flex-direction: column;
     flex: 1;
-    gap: 1rem;
+    gap: 2rem;
 }
-
-.skills-section h2 {
-  
-}
-
 
 .skills-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 .skills-list li {
@@ -249,6 +251,15 @@ main {
     padding: .2rem .6rem;
 }
 
+.flex-item h3 {
+    padding-bottom: 1rem;
+}
+
 .uppercase {
     text-transform: uppercase;
+}
+
+.chevron {
+    width: 2%;
+    margin: 0 auto;
 }
