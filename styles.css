@@ -155,14 +155,12 @@ main {
 .flex-row {
     display: flex;
     flex-direction: row;
-    margin-bottom: 5rem;
     gap: 3.5rem; 
     height: 90vh;
 }
 
 .flex-row-reverse {
     display: flex;
-    margin-bottom: 5rem;
     gap: 3.5rem;
     flex-direction: row-reverse;
     height: 90vh;
