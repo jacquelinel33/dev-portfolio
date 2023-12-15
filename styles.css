@@ -46,9 +46,10 @@
   /*
     7. Avoid text overflows
   */
-  p, h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
     font-weight: lighter;
+    font-family: var(--primary-font-fam);
   }
   /*
     8. Create a root stacking context
@@ -157,6 +158,12 @@ main {
 
 .about{
     height: 90vh;
+}
+
+.about-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .title {
