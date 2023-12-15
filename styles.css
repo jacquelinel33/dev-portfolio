@@ -28,7 +28,7 @@
   */
   body {
     -webkit-font-smoothing: antialiased;
-    line-height: 1.2;
+    line-height: 1.5;
   }
   /*
     5. Improve media defaults
@@ -49,6 +49,10 @@
 h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
     font-weight: lighter;
+    font-family: var(--primary-font-fam);
+  }
+
+  em {
     font-family: var(--primary-font-fam);
   }
   /*
@@ -162,14 +166,13 @@ main {
 
 .about-flex {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    flex-direction: row;
+    gap: 3rem;
 }
 
 .title {
     font-family: var(--primary-font-fam), serif;
     margin-top: 10rem;
-    margin-bottom: 3rem;
     text-transform: uppercase;
 }
 
@@ -201,13 +204,19 @@ main {
     height: auto;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+}
+
 .header-title {
     display: flex;
     justify-content: center;
     font-size: 3rem;
     align-items: center;
     gap: 2rem;
-    height: 75vh;
     padding: 0 10vh;
     flex-direction: row-reverse;
 }
@@ -243,7 +252,7 @@ main {
     display: flex;
     flex-direction: column;
     flex: 1;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .skills-list {
