@@ -102,6 +102,17 @@ h3 {
 h2 {
     font-size: 4rem;
 }
+
+button {
+    width: fit-content;
+    /* font-family: 'Elsie'; */
+    text-transform: uppercase;
+    background: black;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    padding: 0.2rem 0.6rem;
+}
 .nav-logo div {
     /* font-size: 1.5rem; */
     /* border: 1px black solid; */
@@ -238,6 +249,7 @@ header {
 .stacks-list li {
     border: 1px solid black;
     padding: .2rem .6rem;
+    border-radius: 10px;
 }
 
 .sub-title {
@@ -267,6 +279,7 @@ header {
 .skills-list li {
     border: 1px solid black;
     padding: .2rem .6rem;
+    border-radius: 10px;
 }
 
 .flex-item h3 {
@@ -280,6 +293,10 @@ header {
 .chevron {
     width: 2%;
     margin: 0 auto;
+}
+
+.contact {
+    height: 90vh;
 }
 
 
