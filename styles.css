@@ -180,15 +180,17 @@ main {
     padding: 0 10vh;
 }
 
-.about{
-    height: 90vh;
+.about {
+    padding: 0 10em;
 }
 
-.about-flex {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
+.about .flex-item {
+    text-align: center;
 }
+
+/* .about-text p {
+    padding: 0 15rem;
+} */
 
 .title {
     font-family: var(--primary-font-fam), serif;
@@ -316,13 +318,17 @@ header {
 .socials {
     display: flex;
     gap: 1rem;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.about .flex-item {
+/* .about .flex-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+} */
+
+
 
 .shrink img {
     transition: 1s ease;
