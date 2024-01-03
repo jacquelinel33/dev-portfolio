@@ -53,6 +53,10 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 1rem;
   }
 
+  div {
+    padding-bottom: 1rem;
+  }
+
   em {
     font-family: var(--primary-font-fam);
   }
@@ -305,7 +309,7 @@ header {
 }
 
 .contact-icon{
-    height: 40px;
+    height: 50px;
     width: auto;
 }
 
@@ -331,7 +335,8 @@ header {
     transition: 1s ease;
     }
 
-/* .bounce {
+  /*chevron bounce  */
+.bounce {
   animation: bounce 3s infinite;
 }
 
@@ -345,4 +350,4 @@ header {
   60% {
     transform: translateY(-15px);
   }
-} */
+}
