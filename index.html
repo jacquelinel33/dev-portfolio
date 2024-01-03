@@ -7,10 +7,13 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Elsie&family=Inter&family=Kaisei+Opti&family=Lora&family=Open+Sans:wght@300&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-<!-- AOS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Elsie&family=Inter&family=Kaisei+Opti&family=Lora&family=Open+Sans:wght@300&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Js script -->
     <script src="/Users/jacquelinelee/Desktop/web-dev/portfolio/index.js"></script>
@@ -34,47 +37,71 @@
         </ul>
       </div>
     </nav>
-<header>
-    <div class="header-title">
-      <h2 data-aos="fade-down">
-        HI, I'M JACQUELINE! <br />
-        A SOFTWARE DEVELOPER.
-      </h2>
+    <header>
+      <div class="header-title">
+        <h2 data-aos="fade-down">
+          HI, I'M JACQUELINE! <br />
+          A SOFTWARE DEVELOPER.
+        </h2>
+        <img
+          data-aos="fade-right"
+          class="profile-pic"
+          src="/Users/jacquelinelee/Desktop/web-dev/portfolio/assets/profile.jpeg"
+        />
+      </div>
       <img
-        data-aos="fade-right"
-        class="profile-pic"
-        src="/Users/jacquelinelee/Desktop/web-dev/portfolio/assets/profile.jpeg"
+        class="chevron bounce"
+        data-aos="fade-down"
+        src="assets/down-arrow.png"
       />
-    </div>
-    <img class="chevron bounce" data-aos="fade-down" src="assets/down-arrow.png">
-</header>
+    </header>
     <main>
       <section class="about" id="about">
-        <h2 class="title uppercase"  data-aos="fade-down">About</h2>
+        <h2 class="title uppercase" data-aos="fade-down">About</h2>
         <div class="about-flex">
           <div class="flex-item" data-aos="zoom-in">
-            <h3 >I AM A WEB DEVELOPMENT GRADUATE BASED IN VANCOUVER</h3>
-            <p>
-              I have dynamic
-              background as a Technical Project Manager and Apparel Buyer. I
-              bring a unique blend of <em>technical proficiency, creative insight,</em>
-              and <em>effective project execution</em> to the field of web development.
-              Driven by a passion for technology and design, I am eager to apply
-              my unique skill set in a role that challenges me to blend creative
-              design with functional web development; delivering impactful and
-              engaging digital experiences.
-            </p>
-            <p style="padding-top: 1rem;">
-                I have dynamic
-                background as a Technical Project Manager and Apparel Buyer. I
-                bring a unique blend of technical proficiency, creative insight,
-                and effective project execution to the field of web development.
-                Driven by a passion for technology and design, I am eager to apply
-                my unique skill set in a role that challenges me to blend creative
-                design with functional web development; delivering impactful and
-                engaging digital experiences.
+            <div class="about-text">
+              <h3><em>I AM A WEB DEVELOPMENT GRADUATE BASED IN VANCOUVER</em></h3>
+              <p>
+                I have dynamic background as a Technical Project Manager and
+                Apparel Buyer. I bring a unique blend of
+                <em>technical proficiency, creative insight,</em> and
+                <em>effective project execution</em> to the field of web
+                development. Driven by a passion for technology and design, I am
+                eager to apply my unique skill set in a role that challenges me
+                to blend creative design with functional web development;
+                delivering impactful and engaging digital experiences.
               </p>
-             
+            </div>
+            <div>
+              <h3>GET IN TOUCH</h3>
+              <h4>E-MAIL:
+                <a href="mailto:l33.jacq@gmail.com">L33.JACQ@GMAIL.COM</a>
+              </h4>
+              <div class="about-contact">
+                <ul class="socials">
+                  <li>
+                    <a class="shrink" target="_blank" href="https://github.com/jacquelinel33">
+                      <img
+                        class="contact-icon shrink"
+                        src="assets/394187_github_icon.png"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a class="shrink"
+                      target="_blank"
+                      href="https://www.linkedin.com/in/jacquelinelee3/"
+                    >
+                      <img
+                        class="contact-icon"
+                        src="assets/5279114_linkedin_network_social network_linkedin logo_icon.png"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div class="flex-item skills-section uppercase" data-aos="zoom-in">
             <div>
@@ -197,7 +224,7 @@
               sagittis. Ut scelerisque mi a tempor interdum. Pellentesque in
               fermentum tortor.
             </p>
-            <button>View Code</button>
+            <button class="shrink">View Code</button>
           </div>
           <div class="flex-item" data-aos="fade-left">
             <img class="project-image" src="assets/interview-scheduler.png" />

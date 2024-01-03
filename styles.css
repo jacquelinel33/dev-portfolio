@@ -50,6 +50,7 @@ h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
     font-weight: lighter;
     font-family: var(--primary-font-fam);
+    padding-bottom: 1rem;
   }
 
   em {
@@ -88,7 +89,7 @@ li {
 }
 
 html {
-    font-size: 16px;
+    font-size: 18px;
     font-family: var(--primary-font-fam), serif;
     margin: 0 auto;
     background: var(--background-color);
@@ -101,6 +102,10 @@ h3 {
 
 h2 {
     font-size: 4rem;
+}
+
+p {
+    padding-bottom: 1em;
 }
 
 button {
@@ -299,8 +304,34 @@ header {
     height: 90vh;
 }
 
+.contact-icon{
+    height: 40px;
+    width: auto;
+}
 
-.bounce {
+.socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.about .flex-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.shrink img {
+    transition: 1s ease;
+    }
+    
+.shrink img:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+    }
+
+/* .bounce {
   animation: bounce 3s infinite;
 }
 
@@ -314,4 +345,4 @@ header {
   60% {
     transform: translateY(-15px);
   }
-}
+} */
