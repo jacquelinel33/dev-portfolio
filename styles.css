@@ -276,11 +276,16 @@ header {
     gap: 1rem;
 }
 
+.skills {
+    text-align: center;
+}
+
 .skills-section {
     display: flex;
     flex-direction: column;
     flex: 1;
     gap: 1rem;
+    margin: 0 10em;
 }
 
 .skills-list {
@@ -288,6 +293,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     gap: .5rem;
+    justify-content: center;
 }
 
 .skills-list li {
