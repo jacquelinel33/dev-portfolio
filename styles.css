@@ -128,7 +128,7 @@ nav {
     color:black;
 }
 
-.nav-list.scrolled {
+.nav-links.scrolled {
     background-color: #f0efecef;
     border-radius: 100px; 
     padding: 1rem 3rem;
