@@ -31,6 +31,7 @@
     line-height: 1.5;
     width: 100%;
     margin: 0 auto;
+    position: absolute;
   }
   /*
     5. Improve media defaults
@@ -118,7 +119,6 @@ p {
 
 nav {
     display: flex;
-    padding: 1rem 10rem;
     height: 10vh;
     align-items: center;
     justify-content: center;
@@ -126,10 +126,6 @@ nav {
     top: 0;
     z-index: 100;
     color:black;
-}
-
-.nav-list {
-    padding: .5rem 3rem;
 }
 
 .nav-list.scrolled {
@@ -415,7 +411,7 @@ a.btn:hover {
        height: auto;
     }
 
-    @media screen and (max-width: 680px) {
+    @media screen and (max-width: 500px) {
 
         main {
             padding: 0 2vh;
