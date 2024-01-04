@@ -29,6 +29,8 @@
   body {
     -webkit-font-smoothing: antialiased;
     line-height: 1.5;
+    width: 100%;
+    margin: 0 auto;
   }
   /*
     5. Improve media defaults
@@ -366,6 +368,10 @@ a.btn:hover {
 }
 
 @media screen and (max-width:1000px) {
+    main {
+        padding: 0 10vh;
+    }
+
     .about {
         padding: 0;
     }
@@ -410,6 +416,11 @@ a.btn:hover {
     }
 
     @media screen and (max-width: 680px) {
+
+        main {
+            padding: 0 2vh;
+        }
+
        html {
         width: 100%;
        }
