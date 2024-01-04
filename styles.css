@@ -67,21 +67,17 @@ h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
   }
 
-a {
+nav a {
     text-decoration: none;
     color: black;
 }
 
-a:hover {
+nav a:hover {
     cursor: pointer;
     text-decoration: underline;
     color: black;
 }
 
-a:visited { 
-    text-decoration: none;
-    color: black;
-}
 
 ul {
     list-style: none;
@@ -112,16 +108,6 @@ p {
     padding-bottom: 1em;
 }
 
-button {
-    width: fit-content;
-    /* font-family: 'Elsie'; */
-    text-transform: uppercase;
-    background: black;
-    color: white;
-    font-weight: bolder;
-    border: none;
-    padding: 0.2rem 0.6rem;
-}
 .nav-logo div {
     /* font-size: 1.5rem; */
     /* border: 1px black solid; */
@@ -347,6 +333,21 @@ header {
   /*chevron bounce  */
 .bounce {
   animation: bounce 3s infinite;
+}
+
+a.btn {
+    width: fit-content;
+    text-transform: uppercase;
+    background: black;
+    color: var(--background-color);
+    border: none;
+    padding: 0.2rem 0.6rem;
+    font-size: .9rem;
+    text-decoration: none;
+}
+
+a.btn:hover {
+    text-decoration: underline;
 }
 
 @keyframes bounce {
